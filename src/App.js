@@ -6,6 +6,7 @@ import ContactUs from './Pages/Home/ContactUs';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Home/Login';
 import Reviews from './Pages/Home/Reviews';
+import NotFound from './Pages/NotFound/NotFound';
 import Navbar from './Pages/Shared/Navbar';
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
         <Route path='review' element={<Reviews></Reviews>}></Route>
         <Route path='contact' element={<ContactUs></ContactUs>}></Route>
         <Route path='login' element={<Login></Login>}></Route>
-        <Route path='*' element={<Login></Login>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>
   );
